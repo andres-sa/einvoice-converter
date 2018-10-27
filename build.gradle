@@ -1,0 +1,37 @@
+plugins {
+    id 'com.github.jacobono.jaxb' version '1.3.5'
+    id 'net.ltgt.apt' version '0.10'
+}
+
+group 'ee.hedera'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // schema generation
+    jaxb 'com.sun.xml.bind:jaxb-xjc:2.2.7-b41'
+    jaxb 'com.sun.xml.bind:jaxb-impl:2.2.7-b41'
+    jaxb 'javax.xml.bind:jaxb-api:2.2.7'
+
+    // lombok
+    compileOnly 'org.projectlombok:lombok:1.18.2'
+    apt 'org.projectlombok:lombok:1.18.2'
+
+    // testing
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+
+jaxb {
+    xsdDir = "schema/einvoice/1_11"
+
+    xjc {
+        generatePackage = "ee.hedera.gen.einvoice_1_11"
+    }
+}

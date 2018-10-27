@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<E_Invoice>
+    <Header>
+        <Date>2016-05-02</Date>
+        <FileId>160502154107809_95</FileId>
+        <Version>1.1</Version>
+    </Header>
+    <Invoice invoiceId="1057" regNumber="42510077777" sellerRegnumber="10254977">
+        <InvoiceParties>
+            <SellerParty>
+                <Name>Merit Tarkvara AS</Name>
+                <RegNumber>10254977</RegNumber>
+            </SellerParty>
+            <BuyerParty>
+                <Name>Agnes Järv</Name>
+                <RegNumber>42510077777</RegNumber>
+                <VATRegNumber></VATRegNumber>
+                <ContactData>
+                    <LegalAddress>
+                        <PostalAddress1>Põllu 1</PostalAddress1>
+                        <City>Põltsamaa</City>
+                        <PostalCode>48105</PostalCode>
+                        <Country>EE</Country>
+                    </LegalAddress>
+                </ContactData>
+            </BuyerParty>
+        </InvoiceParties>
+        <InvoiceInformation>
+            <Type type="DEB"/>
+            <DocumentName>arve</DocumentName>
+            <InvoiceNumber>1057</InvoiceNumber>
+            <InvoiceDate>2016-04-29</InvoiceDate>
+            <DueDate>2016-05-06</DueDate>
+        </InvoiceInformation>
+        <InvoiceSumGroup>
+            <InvoiceSum>384.30</InvoiceSum>
+            <TotalVATSum>72.90</TotalVATSum>
+            <TotalSum>457.20</TotalSum>
+        </InvoiceSumGroup>
+        <InvoiceItem>
+            <InvoiceItemGroup>
+                <ItemEntry>
+                    <Description>Teenuse müük</Description>
+                    <ItemDetailInfo>
+                        <ItemAmount>1.000</ItemAmount>
+                        <ItemPrice>364.5000</ItemPrice>
+                    </ItemDetailInfo>
+                    <ItemSum>364.50</ItemSum>
+                    <VAT vatId="TAX">
+                        <VATRate>20.00</VATRate>
+                        <VATSum>72.90</VATSum>
+                    </VAT>
+                    <ItemTotal>437.40</ItemTotal>
+                </ItemEntry>
+                <ItemEntry>
+                    <Description>Eluruumi rent</Description>
+                    <ItemDetailInfo>
+                        <ItemAmount>1.000</ItemAmount>
+                        <ItemPrice>19.8000</ItemPrice>
+                    </ItemDetailInfo>
+                    <ItemSum>19.80</ItemSum>
+                    <VAT vatId="TAXEX">
+                        <VATRate>0</VATRate>
+                        <VATSum>0</VATSum>
+                    </VAT>
+                    <ItemTotal>19.80</ItemTotal>
+                </ItemEntry>
+            </InvoiceItemGroup>
+        </InvoiceItem>
+        <PaymentInfo>
+            <Currency>EUR</Currency>
+            <PaymentRefId>10579</PaymentRefId>
+            <PaymentDescription>Arve nr 1057</PaymentDescription>
+            <Payable>YES</Payable>
+            <PaymentTotalSum>457.20</PaymentTotalSum>
+            <PayerName>Agnes Järve</PayerName>
+            <PaymentId>1057</PaymentId>
+            <PayToAccount>EE742200221051064175</PayToAccount>
+            <PayToName>Merit Tarkvara AS</PayToName>
+        </PaymentInfo>
+    </Invoice>
+    <Footer>
+        <TotalNumberInvoices>1</TotalNumberInvoices>
+        <TotalAmount>457.20</TotalAmount>
+    </Footer>
+</E_Invoice>
